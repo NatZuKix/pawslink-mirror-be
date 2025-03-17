@@ -15,7 +15,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar ./app.jar
 
 # Environment variable configuration
-ENV mysql_url=db
+ENV mysql_url=database
 
 # Expose the port your application runs on
 EXPOSE 8080
